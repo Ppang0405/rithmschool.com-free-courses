@@ -31,3 +31,28 @@ The ws or websocket protocol is an upgrade from another strategy known as "longp
 
 
  */
+
+
+/*
+
+
+
+
+2. advance private room
+
+Different kinds of messages and rooms
+
+When using Socket.io, there are different types of messages you may want to send to different users. For managing chat rooms, socket.io has the idea of a room which has its own name and each socket has its own id to ensure private messages can work.
+
+Here are the helpful methods for sending certain types of messages to certain users:
+
+io.emit('name of event'); or io.sockets.emit('name of event'); - sends to everyone in every room, including the sender
+
+io.to('name of room').emit('name of event'); - sends to everyone including the sender, in a room (the first parameter to to)
+
+socket.broadcast.to('name of room').emit('name of event'); - sends to everyone except the sender in a room (the first parameter to to)
+
+socket.emit('name of event') - sends to the sender and no one else
+
+socket.broadcast.to(someOtherSocket.id).emit(); - Send to specific socket only (used for private chat)
+ */
