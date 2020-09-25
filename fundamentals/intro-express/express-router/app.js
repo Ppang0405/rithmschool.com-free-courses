@@ -3,7 +3,10 @@ const bodyParser = require("body-parser");
 
 const app = express();
 // require our routes/index.js file
-const userRoutes = require("./routes");
+const userRoutes = require("./routes/index-3");
+
+// prefix every single route in here with /users
+app.use("/users", userRoutes);
 
 app.use(bodyParser.json());
 
