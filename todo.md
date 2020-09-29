@@ -5,7 +5,7 @@
 - socket with private rooms
 - web scraper -> giá bỉm trung bình trên shoppe
 
-# Add:
+# Extras:
 - node dependencies injection
 
 # Tips:
