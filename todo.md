@@ -1,3 +1,8 @@
+# need completely:
+
+- learn bcrypt - stuck in create psql database;
+
+
 # Todo:
 
 - send mail in nodejs: mailers
